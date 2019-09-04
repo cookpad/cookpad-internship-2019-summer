@@ -1,0 +1,54 @@
+query Recipes($page: Int!, $perPage: Int!) {
+  recipes(page: $page, perPage: $perPage) {
+    id
+    name
+    isLiked
+    description
+    media {
+      thumbnail
+    }
+  }
+}
+
+query Recipe($id: ID!) {
+  recipe(id: $id) {
+    id
+    name
+    isLiked
+    description
+    media {
+      original
+      thumbnail
+    }
+    ingredients {
+      name
+      quantity
+    }
+  }
+}
+
+mutation AddLike($id: ID!) {
+  addLike(recipeID: $id)
+}
+
+mutation DeleteLike($id: ID!) {
+  deleteLike(recipeID: $id)
+}
+
+query Likes($after: String) {
+  likes(after: $after) {
+    nodes {
+      id
+      name
+      isLiked
+      description
+      media {
+        thumbnail
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

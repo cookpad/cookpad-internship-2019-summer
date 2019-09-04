@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs'
+
+target 'MiniCookpad' do
+  pod 'Apollo', '~> 0.14.0'
+  pod 'Instantiate', '~> 4.0'
+  pod 'InstantiateStandard', '~> 4.0'
+  pod 'Kingfisher', '~> 5.6'
+  pod 'APIKit', '~> 5.0'
+
+  target 'MiniCookpadTests' do
+    inherit! :search_paths
+  end
+end

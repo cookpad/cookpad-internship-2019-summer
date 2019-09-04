@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="sLZ-iL-YGK" customClass="LikedRecipesCell" customModule="MiniCookpad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sLZ-iL-YGK" id="ZIf-tU-KeK">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mi8-GR-sbk">
+                        <rect key="frame" x="16" y="16" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="FBY-WN-gGa"/>
+                            <constraint firstAttribute="height" constant="80" id="KgK-zK-oVL"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HvW-2y-kTX">
+                        <rect key="frame" x="112" y="34.5" width="286" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レシピ名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzO-hg-LpF">
+                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" name="cookpad/green"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="説明文" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbu-xx-GTd">
+                                <rect key="frame" x="0.0" y="29" width="37" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="cookpad/black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mi8-GR-sbk" firstAttribute="leading" secondItem="ZIf-tU-KeK" secondAttribute="leading" constant="16" id="8Kw-y2-n2w"/>
+                    <constraint firstItem="HvW-2y-kTX" firstAttribute="centerY" secondItem="mi8-GR-sbk" secondAttribute="centerY" id="CbI-xi-pzF"/>
+                    <constraint firstItem="mi8-GR-sbk" firstAttribute="top" secondItem="ZIf-tU-KeK" secondAttribute="top" constant="16" id="Fc3-LA-FPE"/>
+                    <constraint firstAttribute="trailing" secondItem="HvW-2y-kTX" secondAttribute="trailing" constant="16" id="L2d-7M-DF2"/>
+                    <constraint firstItem="HvW-2y-kTX" firstAttribute="leading" secondItem="mi8-GR-sbk" secondAttribute="trailing" constant="16" id="TAL-Hv-3G2"/>
+                    <constraint firstAttribute="bottom" secondItem="mi8-GR-sbk" secondAttribute="bottom" priority="750" constant="16" id="aAJ-j9-riL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="Gbu-xx-GTd" id="GHO-7H-OJG"/>
+                <outlet property="nameLabel" destination="lzO-hg-LpF" id="LYE-Dc-P1I"/>
+                <outlet property="recipeImageView" destination="mi8-GR-sbk" id="OTC-Xu-rt6"/>
+            </connections>
+            <point key="canvasLocation" x="-86.956521739130437" y="28.125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="cookpad/black">
+            <color red="0.28200000524520874" green="0.2669999897480011" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cookpad/green">
+            <color red="0.54500001668930054" green="0.67799997329711914" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

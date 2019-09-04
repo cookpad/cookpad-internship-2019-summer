@@ -1,0 +1,14 @@
+{
+  "name": "ios-apollo",
+  "version": "1.0.0",
+  "description": "GraphQL API generator",
+  "repository": "https://github.com/cookpad/cookpad-internship-2019-summer",
+  "private": true,
+  "devDependencies": {
+    "apollo": "^2.16.1"
+  },
+  "dependencies": {},
+  "scripts": {
+    "generate": "yarn apollo client:download-schema --endpoint=[enter_your_endpoint] && apollo client:codegen ../MiniCookpad/generated/GraphQLAPI.swift --target=swift --queries=./*.graphql --localSchemaFile=./schema.json"
+  }
+}

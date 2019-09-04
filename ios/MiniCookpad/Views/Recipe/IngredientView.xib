@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QrE-0p-rxJ" customClass="IngredientView" customModule="MiniCookpad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbQ-mr-B8M">
+                    <rect key="frame" x="16" y="8" width="191" height="195"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" name="cookpad/black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQQ-Tg-188">
+                    <rect key="frame" x="207" y="8" width="191" height="195"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" name="cookpad/black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eQQ-Tg-188" firstAttribute="leading" secondItem="dbQ-mr-B8M" secondAttribute="trailing" id="7Nt-ad-xgq"/>
+                <constraint firstAttribute="bottom" secondItem="eQQ-Tg-188" secondAttribute="bottom" constant="8" id="HOG-2J-Yjj"/>
+                <constraint firstAttribute="bottom" secondItem="dbQ-mr-B8M" secondAttribute="bottom" constant="8" id="ND4-3Q-bHm"/>
+                <constraint firstItem="3Xc-qE-hen" firstAttribute="trailing" secondItem="eQQ-Tg-188" secondAttribute="trailing" constant="16" id="P5A-59-Vab"/>
+                <constraint firstItem="eQQ-Tg-188" firstAttribute="width" secondItem="dbQ-mr-B8M" secondAttribute="width" id="VxW-Ik-sn3"/>
+                <constraint firstItem="dbQ-mr-B8M" firstAttribute="leading" secondItem="3Xc-qE-hen" secondAttribute="leading" constant="16" id="Ypg-1K-bGP"/>
+                <constraint firstItem="dbQ-mr-B8M" firstAttribute="top" secondItem="QrE-0p-rxJ" secondAttribute="top" constant="8" id="uJY-0g-HId"/>
+                <constraint firstItem="eQQ-Tg-188" firstAttribute="top" secondItem="QrE-0p-rxJ" secondAttribute="top" constant="8" id="z6n-tG-5Nm"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="3Xc-qE-hen"/>
+            <connections>
+                <outlet property="nameLabel" destination="dbQ-mr-B8M" id="Dnd-fG-V6I"/>
+                <outlet property="quantityLabel" destination="eQQ-Tg-188" id="rbB-G7-2c0"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="31.403940886699509"/>
+        </view>
+        <view contentMode="scaleToFill" id="sOl-Bl-HBX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyV-ck-V7G">
+                    <rect key="frame" x="156" y="83" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1kS-Zm-O9e"/>
+            <point key="canvasLocation" x="117.59999999999999" y="-174.01477832512316"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="cookpad/black">
+            <color red="0.28200000524520874" green="0.2669999897480011" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

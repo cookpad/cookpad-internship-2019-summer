@@ -1,0 +1,35 @@
+PODS:
+  - APIKit (5.0.0)
+  - Apollo (0.14.0):
+    - Apollo/Core (= 0.14.0)
+  - Apollo/Core (0.14.0)
+  - Instantiate (4.0.0)
+  - InstantiateStandard (4.0.0):
+    - Instantiate (~> 4.0)
+  - Kingfisher (5.6.0)
+
+DEPENDENCIES:
+  - APIKit (~> 5.0)
+  - Apollo (~> 0.14.0)
+  - Instantiate (~> 4.0)
+  - InstantiateStandard (~> 4.0)
+  - Kingfisher (~> 5.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - APIKit
+    - Apollo
+    - Instantiate
+    - InstantiateStandard
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  APIKit: b27d79b022733b2f50e7a092e67c4cb9ea30f968
+  Apollo: 56faf8bf9452bf2fd76d9d5fdbba5a63579f5f15
+  Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
+  InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
+  Kingfisher: 1a50df6880a60bae26f3e21a0df3d17b892f5e0b
+
+PODFILE CHECKSUM: a3daab2b19deb1074709fc03c7ba60e6efabfc50
+
+COCOAPODS: 1.7.2

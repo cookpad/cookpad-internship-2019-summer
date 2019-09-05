@@ -1,0 +1,10 @@
+query RecipesQuery {
+    recipes {
+        id
+        name
+        description
+        media {
+            thumbnail
+        }
+    }
+}
